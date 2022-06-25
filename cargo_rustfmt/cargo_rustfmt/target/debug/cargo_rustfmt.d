@@ -1,1 +1,0 @@
-C:\Users\30693\Desktop\vscodeprojects\Rust-Introduction\cargo_rustfmt\cargo_rustfmt\target\debug\cargo_rustfmt.exe: C:\Users\30693\Desktop\vscodeprojects\Rust-Introduction\cargo_rustfmt\cargo_rustfmt\src\main.rs
