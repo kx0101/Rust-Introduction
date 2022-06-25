@@ -21,6 +21,51 @@ fn main() {
 
     let letter: char = 'a';
 
+
+    let tup: (i32, bool, char) = (1, true, 'c');
+    let tup2: (i8, bool, char) = (1, true, 'c');
+
+    // The above two have different types
+
+    // In order to print a tup element you need to specify the index of the tup. For example:
+    println!("{}", tup); // error
+    println!("{}", tup.1); // will print 'true'
+
+
+    // Change a tup value 
+
+    let mut tup3: (i32, bool, char) = (1, true, 'c');
+
+    tup3.0 = 2;
+
+    // You cannot change the type of the tuple. E.g.
+    let tup = (1, true, 'c', 10); //error
+
+
+    
+    let mut arr: [i32, 5];
+    println!("{}", arr[4]) // error because we haven't initialized all the elements of the array
+
+    let mut arr2: [i32, 5] = [];
+    println!("{}", arr[4]) // error because the array is empty
+
+    let mut arr3: [i32, 5] = [1, 2, 3, 4, 5];
+    // or
+    let mut arr4 = [1, 2, 3, 4, 5];
+    
+    // ways of initializing an array
+    
+    
+    // extra tip
+
+    let x: u8 = 4;
+    let y = x;
+
+    // y is the same type as x so that means u8 and if we try to do something like that:
+
+    let y: i32 = x; // this will occur an error
+
+
 }
 
 // Scalar Types
@@ -46,3 +91,15 @@ fn main() {
 // Chars
 
 // let letter: char = 'a' means assigning letter as a char with SINGLE quotes.
+
+
+
+// Tuples
+
+// Immutable but we can use 'mut' in order to make them mutable.
+
+
+
+// Arrays
+
+// Immutable but we acn use 'mut' in order to make them mutable.
