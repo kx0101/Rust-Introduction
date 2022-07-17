@@ -1,4 +1,4 @@
-#[derive(Debug, PartialEq)]
+#[derive(Debug, PartialEq)] 
 2
 pub enum ResistorColor {
 3
